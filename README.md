@@ -1,4 +1,6 @@
-A demonstration of the IoT platform **send_altitude_cocoos** ported to the ST DiscoveryF4 board. Position aquired from a GPS module is sent to Sigfox network.
+A demonstration of the IoT platform **https://github.com/lupyuen/send_altitude_cocoos** ported to the ST DiscoveryF4 board. Position aquired from a GPS module is sent to Sigfox network. 
+
+It also serves as a demonstration of the multitasking scheduler cocoOS: https://github.com/cocoOS/cocoOS which is a light-weight super portable scheduler perfect for small microcontrollers used in IoT applications.
 
 # Introduction
 This project is based on the **send_altitude_cocoos** platform and follows its pattern: sensors are periodically polled for new readings that are sent to an aggregator. The aggregator in turn is setup to periodically send the collected readings to the network task for transmission. Finally the network task sends the sensor readings as a package to the connected Sigfox radio.
