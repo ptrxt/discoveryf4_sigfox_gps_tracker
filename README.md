@@ -3,7 +3,7 @@ A demonstration of the IoT platform **https://github.com/lupyuen/send_altitude_c
 It also serves as a demonstration of the multitasking scheduler cocoOS: https://github.com/cocoOS/cocoOS which is a light-weight super portable scheduler perfect for small microcontrollers used in IoT applications.
 
 # Introduction
-This project is based on the **send_altitude_cocoos** platform and follows its pattern: sensors are periodically polled for new readings that are sent to an aggregator. The aggregator in turn is setup to periodically send the collected readings to the network task for transmission. Finally the network task sends the sensor readings as a package to the connected Sigfox radio.
+This project follows the pattern set out in the **send_altitude_cocoos** platform: sensors are periodically polled for new readings that are sent to an aggregator. The aggregator in turn is setup to periodically send the collected readings to the network task for transmission. Finally the network task sends the sensor readings as a package to the connected Sigfox radio.
 
 ### Repo structure changes
 However, the code has been refactored and restructured. Some files have been removed, and others have been renamed. All references to Arduino are removed, so is also all the debug prints to make the code cleaner and more readable. File tree was restructured to separate platform files at top level from project specific files in subfolders:
